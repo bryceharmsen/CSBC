@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Chestnut Street Baptist Church : Contact Us</title>
+		<title>Chestnut Street Baptist Church : Contact Us Page</title>
 		<link rel="stylesheet" href="css/main.css" />
 	</head>
 	<body>
