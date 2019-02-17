@@ -1,0 +1,76 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>CSBC</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="tab">
+    <button class="tablinks left active" onclick="openTab(event, 'Home')"><img id="homelogo" src="img/CSBC_finals.large_Logo.mark.png"></button>
+
+    <button class="tablinks right" onclick="openTab(event, 'About')">ABOUT US</button>
+    <button class="tablinks right" onclick="openTab(event, 'Contact')">CONTACT US</button>
+    <button class="tablinks right" onclick="openTab(event, 'Give')">GIVE</button>
+    <button class="tablinks right" onclick="openTab(event, 'Events')">EVENTS</button>
+    <button class="tablinks right" onclick="openTab(event, 'Media')">MEDIA</button>
+    <button class="tablinks right" onclick="openTab(event, 'Ministries')">MINISTRIES</button>
+
+  </div>
+
+  <div class="tabcontent" id="Home">
+    <img src="img/CSBC_finals_large_Logo.tagline.jpg">
+  </div>
+
+  <div class="tabcontent" id="About">
+    <iframe src="https://youtube.com/embed/yNbpojEreOk" width=800 height=500  allowfullscreen></iframe>
+  </div>
+
+  <div class="tabcontent contact" id="Contact">
+    <table>
+      <?php include "contact.php";?>
+    </table>
+  </div>
+
+  <div class="tabcontent" id="Events">
+    <iframe src="https://calendar.google.com/calendar/embed?src=chestnut@fairpoint.net&ctz=America/Los_Angeles" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  </div>
+
+  <div class="tabcontent" id="Give">
+    
+  </div>
+
+  <div class="tabcontent" id="Media">
+   <?php include "sermons.php";?>
+  </div>
+
+  <div class="tabcontent" id="Ministries">
+    <?php include "ministries.php";?>    
+  </div>
+
+  <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
+  <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
